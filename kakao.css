@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: grey;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.kakao img {
+  height: 45px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: solid black;
+  font-size: 16px;
+}
+
+.navigation ul li:not(:hover) a {
+  color: black;
+}
+
+.navigation ul li a:hover {
+  color: black;
+}
+
+/* 평소앤 검정, 다른 곳에 hover 시 나머지 회색 어떻게? */
+/* .navigation ul li a:not(:hover) {
+  color: grey;
+} */
+
+/* 드롭다운 옆으로 길게 어떻게? */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* hover 시 해당 글씨 하얀색 유지하는 부분 반영 */
+.dropdown-content a:hover {
+  font-weight: bold;
+  /* padding: 10px 20px; */
+  margin: 5px;
+}
+
+.dropdown.active .dropdown-content {
+  display: flex;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icons img {
+  height: 32px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* 카카오 이야기들 */
+.stories {
+  padding: 20px;
+}
+
+.stories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories-header h2 {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.headericon {
+  width: 30px;
+  height: 30px;
+}
+
+.stories-contents {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+
+.stories-content {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 20px 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.stories-content img {
+  width: 100%;
+  height: auto;
+}
+
+.content-top {
+  padding: 10px;
+  background-color: white;
+}
+
+.content-top .storiesicon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.content-top h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: black;
+}
+
+.content-top p {
+  margin: 0;
+  font-size: 14px;
+  color: grey;
+}
+
+.content-top p:hover {
+  color: black;
+}
+
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+}
