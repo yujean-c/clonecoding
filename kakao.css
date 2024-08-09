@@ -8,7 +8,7 @@ main {
 }
 
 footer {
-  background-color: grey;
+  background-color: gainsboro;
 }
 
 .header-all {
@@ -17,7 +17,7 @@ footer {
   align-items: center;
   padding: 10px 20px;
   background-color: white;
-  border-bottom: 1px solid rgb(172, 172, 172);
+  border-bottom: 1px solid gainsboro;
 }
 
 .kakao img {
@@ -69,7 +69,7 @@ footer {
 
 .dropdown-content a {
   display: block;
-  padding: 5px 10px;
+  padding: 0 10px;
   text-decoration: none;
   color: white;
 }
@@ -103,7 +103,7 @@ footer {
 .stories-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* padding-left: 30%; */
 }
 
 .stories-header h2 {
@@ -115,27 +115,33 @@ footer {
 .headericon {
   width: 30px;
   height: 30px;
+  margin-left: 250px;
 }
 
 .stories-contents {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-y: hidden;
   padding-top: 20px;
+  margin: 0;
 }
 
 .stories-content {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  margin: 20px 10px;
-  border: 1px solid #ddd;
+  height: 90%;
+  width: 400px;
+  padding: 40px;
+  margin: 10px;
+  border: 1px solid gainsboro;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-sizing: border-box;
+  background-color: rgb(149, 149, 149);
 }
 
 .stories-content img {
+  height: 50%;
   width: 100%;
   height: auto;
 }
@@ -153,7 +159,7 @@ footer {
 }
 
 .content-top h3 {
-  margin: 10px 0 5px;
+  /* margin: 10px 0 5px; */
   font-size: 18px;
   color: black;
 }
@@ -172,3 +178,5 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* new */
